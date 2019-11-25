@@ -8,7 +8,8 @@ import router from './router/router.js';
 
 import User from './Helpers/User'
 window.User = User
-console.log(User.id())
+
+window.EventBus = new Vue();
 
 const app = new Vue({
     vuetify,
