@@ -17,10 +17,12 @@ class QuestionResource extends JsonResource
     {
         return [
             'title' => $this->title,
+            'slug' => $this->slug,
             'path' => $this->path,
             'body' => $this->body,
             'create_at' => \Carbon\Carbon::createFromTimeStamp(strtotime($this->created_at))->diffForHumans(),
-            'user' => $this->user->name
+            'user' => $this->user->name,
+            'user_id' => $this->user->id
         ];
     }
 }

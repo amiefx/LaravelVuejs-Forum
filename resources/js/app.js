@@ -5,6 +5,8 @@ import vuetify from './vuetify';
 import App from './components/AppHome.vue';
 import router from './router/router.js';
 
+import md from 'marked'
+window.md = md
 
 import User from './Helpers/User'
 window.User = User
